@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	<!-- header. There are 2 header ids for 2 different styles. -->
+	<div class="header2 header">
+		<h1>Crystal Collector</h1>
+	</div>
+
+	<!-- Instructions. -->
+	<div class="instructions">
+		<h3>Game instructions</h3>
+		<ol>
+			<span id="header3">"Number To Get"</span>
+			<li>You will be given a random number at the start of the game.</li>
+			<li>There are four crystals below.</li>
+			<ul>
+				<li id="blue">Blue</li>
+				<li id="purple">Purple</li>
+				<li id="green">Green</li>
+				<li id="black">Black</li>
+			</ul>
+			<li id="li1">By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+			<li id="li2">You win the game by matching your total score to the random number.</li>
+			<li id="li3">You lose the game if your total score goes above the random number.</li>
+			<li id="li4">The value of each crystal is hidden from you until you click on it.</li>
+			<li id="li5">Each time when the game starts, the game will change the values of each crystal.</li>
+		</ol>
+
+		<!-- Random generated number -->
+	</div>
+	<div class="numberToMatch">
+		<h2>Number To Get:
+			<span id="randomNumber"></span>
+		</h2>
+	</div>
+
+	<!-- These are the wins and losses on the screen. -->
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id="numberWins"></span>
+			</br>
+			Losses:
+			<span id="numberLosses"></span>
+		</h2>
+	</div>
+
+	<!-- These are the 4 diamonds page that you click. -->
+	<div class="gems">
+		<img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
+		<img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
+		<img src="assets/images/red.png" class=gemImage id="three" alt="Red Gem">
+		<img src="assets/images/yellow.png" class=gemImage id="four" alt="Yellow Gem">
+	</div>
+
+	<!-- This is the total score container. -->
+	<div class="userTotal">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+
+	<!-- Javascript library and javascrit call. -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/games.js"></script>
+</body>
+
+</html>
